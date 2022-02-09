@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d8dd195afb.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="normalize.css">
+    <title>Todo App</title>
+</head>
+<body>
+    <main class="main">
+        <h1>#todo</h1>
+        <div class="options">
+            <label for="all">All</label>
+            <label for="active">Active</label>
+            <label for="completed">Completed</label>
+
+            <input type="checkbox" id="all" class="check">
+            <input type="checkbox" id="active" class="check">
+            <input type="checkbox" id="completed" class="check">
+        </div>
+        
+        <div class="conteiner">         
+          <!---==== All: Start ====--->  
+            <div class="all">
+                <div class="input_conteiner">
+                    <input type="text" placeholder="add details" class="add_homework">
+                    <button class="btn_add homework">Add</button>
+                </div>
+    
+                <ul class="list homework_list">
+                    <li>
+                        <input type="checkbox" class="checkbox">
+                        <p>Do coding challenge</p>      
+                    </li>
+
+                    <li>
+                        <input type="checkbox" class="checkbox">
+                        <p>Do coding challenge</p>      
+                    </li>
+
+                    <li>
+                        <input type="checkbox" class="checkbox">
+                        <p>Do coding challenge</p>      
+                    </li>
+                </ul>
+            </div>
+            <!---==== All: End ====--->  
+    
+            <!---==== Active: Start ====---> 
+            <div class="active">
+                <div class="input_conteiner">
+                    <input type="text" placeholder="add details" class="add_active">
+                    <button class="btn_add active_btn">Add</button>
+                </div>
+    
+                <ul class="list active_list">
+                    <li>
+                        <input type="checkbox" class="checkbox">
+                        <p>Do coding challenge</p>      
+                    </li>
+
+                    <li>
+                        <input type="checkbox" class="checkbox">
+                        <p>Do coding challenge</p>      
+                    </li>
+                </ul>
+            </div>
+            <!---==== Active: End ====---> 
+            
+            <!---==== Completed: Start ====---> 
+            <div class="completed">
+                <ul class="list completed_list">
+                    <li class="list_element">
+                        <span class="detail">
+                            <input type="checkbox" class="checkbox">
+                            <p>Trash done1</p>
+                        </span>
+
+                        <i class='bx bx-trash icon_deleted'></i> 
+                    </li>
+
+                    <li class="list_element">
+                        <span class="detail">
+                            <input type="checkbox" class="checkbox">
+                            <p>Trash done2</p>
+                        </span>  
+
+                        <i class='bx bx-trash icon_deleted'></i>      
+                    </li>
+
+                    <li class="list_element">
+                        <span class="detail">
+                            <input type="checkbox" class="checkbox">
+                            <p>Trash done3</p>
+                        </span>
+                        
+                        <i class='bx bx-trash icon_deleted'></i>     
+                    </li>
+                </ul>
+                <div class="btn_deleted">
+                    <button>Deleted all <i class='bx bx-trash'></i></button>
+                </div>
+            </div>
+            <!---==== Completed: End ====--->
+        </div>
+    </main>
+
+<script src="script.js"></script>
+</body>
+</html>

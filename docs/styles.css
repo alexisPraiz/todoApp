@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap');
+.main{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 25px;
+    position: relative;
+    overflow: hidden;
+}
+.main h1{
+    font-size: 23px;
+    font-weight: 600;
+    color: #2B2B2B;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.conteiner{
+    display: flex;
+    width: 300%;
+}
+.all,
+.active,
+.completed{
+    width: 100%;
+    margin-top: 65px;
+    transition: transform .5s ease;
+}
+.main .options{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #999999;
+    font-size: 13px;
+    font-weight: 600;
+    color: #2B2B2B;
+    position: absolute;
+    cursor: pointer;
+}
+.main .options label{
+    width: 130px;
+    text-align: center;
+    cursor: pointer;
+}
+.main .options input{
+    display: none;
+}
+.main .options label:hover{
+    color: #48e;
+}
+/*---==== List styles: Start ====---*/
+.conteiner .input_conteiner{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+.conteiner .input_conteiner input{
+    width: 80%;
+    padding: 12px 10px;
+    border: 1px solid #707070;
+    border-radius: 10px;
+    outline: none;
+}
+.conteiner .input_conteiner button{
+    width: max-content;
+    background: #48e;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 0 30px;
+    cursor: pointer;
+}
+.conteiner .list{
+    margin-top: 20px;
+    list-style: none;
+    font-weight: 500;
+    color: #2B2B2B;
+}
+.conteiner .list li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.conteiner .completed .list li{
+    justify-content: space-between;
+}
+.conteiner .completed .list_element p{
+    pointer-events: none;
+}
+.conteiner .list li .detail{
+    display: flex;
+    align-items: center;
+}
+.conteiner .list li .checkbox{
+    min-width: 25px;
+    width: 15px;
+    height: 15px;
+}
+.conteiner .list li i{
+    color: rgb(223, 57, 57);
+    cursor: pointer;
+}
+/*checkbox*/
+.conteiner .list .checkbox:checked + p{
+    text-decoration: line-through;
+}
+
+/*trash*/
+.completed .btn_deleted{
+    display: flex;
+    justify-content: end;
+}
+.conteiner .completed .btn_deleted button{
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 3px;
+    background: #FF2442;
+    color: #fff;
+    font-size: 15px;
+    padding: 6px 10px;
+    cursor: pointer;
+}
+/*---==== List styles: End ====---*/
+
+/*Responsive desing*/
+@media screen and (max-width: 800px){
+    .main{
+        width: 65%;
+    }
+}
+@media screen and (max-width: 700px){
+    .main{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 600px){
+    .main{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 500px){
+    .main{
+        width: 90%;
+    }
+    .conteiner .input_conteiner input{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 380px){
+    .main{
+        width: 95%;
+    }
+    .conteiner .list{
+        font-size: 14px;
+    }
+    .conteiner .input_conteiner input{
+        width: 65%;
+    }
+    .conteiner .list li i{
+        font-size: 17px;
+    }
+}
